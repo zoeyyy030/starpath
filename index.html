@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#05070a">
+  <title>StarPath · 每日观星训练</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app" id="app" aria-live="polite">
+    <header class="header">
+      <div class="eyebrow"><span id="dayTag">DAY --</span><span id="meta"></span></div>
+      <h1 id="lessonTitle">正在加载课程…</h1>
+      <p id="lessonGoal"></p>
+      <div class="progress" aria-label="课程进度"><i id="progressBar"></i></div>
+    </header>
+
+    <section class="sky" id="sky" aria-label="互动星图">
+      <svg id="lineLayer" class="line-layer" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      <div id="starLayer"></div>
+      <div class="binocular" id="binocular" aria-hidden="true"><div class="bino-ring"></div></div>
+      <div class="sky-caption" id="skyCaption"></div>
+    </section>
+
+    <section class="card" id="stepCard">
+      <div class="step-kicker" id="stepKicker"></div>
+      <h2 id="stepTitle"></h2>
+      <p id="stepContent"></p>
+      <ol id="guideList" class="guide-list"></ol>
+      <p id="feedback" class="feedback"></p>
+    </section>
+
+    <nav class="controls">
+      <button class="button ghost" id="backButton">上一步</button>
+      <button class="button primary" id="actionButton">开始训练</button>
+    </nav>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

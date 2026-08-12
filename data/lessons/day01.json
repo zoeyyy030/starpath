@@ -1,0 +1,17 @@
+{
+  "day": 1,
+  "title": "找到夏季大三角",
+  "chapter": "建立天空方向感",
+  "difficulty": 1,
+  "duration": "15分钟",
+  "goal": "在夏季夜空中认出织女星、天津四和牛郎星",
+  "objects": ["summer_triangle"],
+  "steps": [
+    {"type":"intro","title":"今晚，从三颗亮星开始","content":"夏季大三角由织女星、天津四和牛郎星组成，是建立夏季天空地图的入口。"},
+    {"type":"learn","target":"summer_triangle","title":"认识夏季大三角","content":"先观察三颗亮星的位置与三角形轮廓，再逐一点击星点查看。"},
+    {"type":"quiz","target":"vega","question":"请点击织女星","retryHint":"寻找三角形西侧最亮的那颗星。"},
+    {"type":"practice","mode":"blind_sky","target":"altair","title":"无标签找到牛郎星","hideLabels":true,"hideLines":true,"retryHint":"它位于大三角偏南的位置。"},
+    {"type":"binocular","equipment":"10x50","target":"deneb","fieldOfView":"6deg","hint":"先肉眼找到天津四，再移动双筒视场。"}
+  ],
+  "completion":{"unlockDay":2,"knownObjects":["summer_triangle"],"ability":"夏季亮星定位 Lv1"}
+}

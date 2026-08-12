@@ -1,0 +1,5 @@
+{
+  "id":"polaris","name":"北极星","description":"小熊座最亮星，接近北天极，可帮助判断北方。",
+  "stars":[{"id":"polaris","name":"北极星","en":"Polaris","x":20,"y":15,"magnitudeSize":6,"color":"#fff7df","description":"接近北天极，在北半球夜空中几乎不移动。"}],
+  "lines":[]
+}

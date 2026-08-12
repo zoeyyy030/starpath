@@ -1,0 +1,18 @@
+{
+  "day": 2,
+  "title": "寻找北极星",
+  "chapter": "建立天空方向感",
+  "difficulty": 1,
+  "duration": "15分钟",
+  "goal": "学会利用北斗七星找到北极星并判断北方",
+  "objects": ["ursa_major", "polaris"],
+  "steps": [
+    {"type":"intro","title":"天空中的指南针","content":"北极星接近北天极，可以帮助你在夜空中判断北方。"},
+    {"type":"learn","target":"ursa_major","title":"先认识北斗七星","content":"北斗由四颗斗身星和三颗斗柄星组成。先记住斗口的天璇与天枢。"},
+    {"type":"guide","action":"ursa_to_polaris","title":"沿斗口指向北极星","steps":["找到北斗七星","识别斗口的天璇与天枢","沿两星方向延长约五倍距离"],"hint":"斗口两星指北极，延长五倍找到它。"},
+    {"type":"quiz","target":"polaris","question":"请点击北极星","retryHint":"先找到斗口两颗星，再沿指向延长。"},
+    {"type":"practice","mode":"blind_sky","target":"polaris","title":"无标签再次定位","hideLabels":true,"hideLines":true,"retryHint":"回忆斗口两星的方向。"},
+    {"type":"binocular","equipment":"10x50","target":"polaris","fieldOfView":"6deg","hint":"先肉眼定位，再举起双筒。"}
+  ],
+  "completion":{"unlockDay":3,"knownObjects":["polaris"],"ability":"方向定位 Lv1"}
+}

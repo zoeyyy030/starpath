@@ -1,0 +1,9 @@
+{
+  "id":"summer_triangle","name":"夏季大三角","description":"横跨天琴座、天鹅座和天鹰座的醒目亮星组合。",
+  "stars":[
+    {"id":"vega","name":"织女星","en":"Vega","x":30,"y":30,"magnitudeSize":7,"color":"#f4f7ff","description":"天琴座最亮星，也是夏季大三角中最明亮的一角。"},
+    {"id":"deneb","name":"天津四","en":"Deneb","x":68,"y":23,"magnitudeSize":6,"color":"#edf4ff","description":"天鹅座最亮星，位于夏季大三角北侧。"},
+    {"id":"altair","name":"牛郎星","en":"Altair","x":53,"y":74,"magnitudeSize":6,"color":"#fff3df","description":"天鹰座最亮星，位于夏季大三角南侧。"}
+  ],
+  "lines":[["vega","deneb"],["deneb","altair"],["altair","vega"]]
+}
