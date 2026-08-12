@@ -8,7 +8,20 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="app" id="app" aria-live="polite">
+  <main class="catalog" id="catalog" aria-live="polite">
+    <header class="catalog-header">
+      <div class="brand">STARPATH</div>
+      <p class="catalog-kicker">30 天观星训练</p>
+      <h1>建立你的天空地图</h1>
+      <p>选择一课开始训练。完成的课程会保留记录，随时可以回来复习。</p>
+      <div class="catalog-summary"><span id="completedCount">0</span> / <span id="lessonCount">0</span> 课已完成</div>
+    </header>
+    <section class="lesson-grid" id="lessonGrid" aria-label="课程列表"></section>
+    <p class="catalog-status" id="catalogStatus"></p>
+  </main>
+
+  <main class="app hidden" id="app" aria-live="polite">
+    <a class="home-link" href="./" aria-label="返回课程列表">‹ 课程列表</a>
     <header class="header">
       <div class="eyebrow"><span id="dayTag">DAY --</span><span id="meta"></span></div>
       <h1 id="lessonTitle">正在加载课程…</h1>

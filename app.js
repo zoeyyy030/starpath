@@ -6,8 +6,26 @@ const $=id=>document.getElementById(id);
 const ui={day:$('dayTag'),meta:$('meta'),title:$('lessonTitle'),goal:$('lessonGoal'),bar:$('progressBar'),sky:$('sky'),stars:$('starLayer'),lines:$('lineLayer'),bino:$('binocular'),caption:$('skyCaption'),kicker:$('stepKicker'),stepTitle:$('stepTitle'),content:$('stepContent'),list:$('guideList'),feedback:$('feedback'),back:$('backButton'),action:$('actionButton')};
 
 async function getJSON(path){const response=await fetch(path);if(!response.ok)throw new Error(`${path} (${response.status})`);return response.json()}
+async function loadCatalog(){
+  const entries=await getJSON('data/lessons/index.json');
+  const lessons=await Promise.all(entries.map(entry=>getJSON(`data/lessons/${entry.file}`)));
+  const grid=document.getElementById('lessonGrid');
+  grid.innerHTML='';
+  let completed=0;
+  lessons.sort((a,b)=>a.day-b.day).forEach(lesson=>{
+    const isCompleted=Boolean(localStorage.getItem(`starpath.day${lesson.day}.completed`));
+    if(isCompleted)completed++;
+    const card=document.createElement('a');
+    card.className=`lesson-card${isCompleted?' completed':''}`;
+    card.href=`?day=${String(lesson.day).padStart(2,'0')}`;
+    card.innerHTML=`<div class="lesson-day">DAY ${String(lesson.day).padStart(2,'0')}</div><h2>${lesson.title}</h2><p>${lesson.goal}</p><div class="lesson-meta"><span>难度 ${lesson.difficulty} · ${lesson.duration}</span><span class="${isCompleted?'complete-mark':''}">${isCompleted?'✓ 已完成':'开始训练 →'}</span></div>`;
+    grid.appendChild(card);
+  });
+  document.getElementById('completedCount').textContent=completed;
+  document.getElementById('lessonCount').textContent=lessons.length;
+}
 async function loadLesson(){
-  const day=new URLSearchParams(location.search).get('day')||'01';
+  const day=new URLSearchParams(location.search).get('day');
   state.lesson=await getJSON(`data/lessons/day${String(day).padStart(2,'0')}.json`);
   const objects=await Promise.all(state.lesson.objects.map(id=>getJSON(`data/objects/${id}.json`)));
   objects.forEach(object=>state.objects.set(object.id,object));
@@ -59,4 +77,11 @@ function completeLesson(){const c=state.lesson.completion;localStorage.setItem(`
 
 function setBino(event){const rect=ui.sky.getBoundingClientRect(),point=event.touches?.[0]||event;state.bino.x=Math.max(0,Math.min(100,(point.clientX-rect.left)*100/rect.width));state.bino.y=Math.max(0,Math.min(100,(point.clientY-rect.top)*100/rect.height));ui.bino.style.setProperty('--bx',`${state.bino.x}%`);ui.bino.style.setProperty('--by',`${state.bino.y}%`)}
 ui.sky.addEventListener('pointerdown',event=>{if(state.lesson?.steps[state.index]?.type==='binocular'){state.bino.drag=true;setBino(event)}});window.addEventListener('pointermove',event=>{if(state.bino.drag)setBino(event)});window.addEventListener('pointerup',()=>state.bino.drag=false);
-loadLesson().catch(error=>{ui.title.textContent='课程加载失败';ui.goal.textContent='请通过本地服务器打开本项目。';ui.content.textContent=error.message;console.error(error)});
+const requestedDay=new URLSearchParams(location.search).get('day');
+if(requestedDay){
+  document.getElementById('catalog').classList.add('hidden');
+  document.getElementById('app').classList.remove('hidden');
+  loadLesson().catch(error=>{ui.title.textContent='课程加载失败';ui.goal.textContent='请返回课程列表重试。';ui.content.textContent=error.message;console.error(error)});
+}else{
+  loadCatalog().catch(error=>{document.getElementById('catalogStatus').textContent='课程列表加载失败，请刷新重试。';console.error(error)});
+}
