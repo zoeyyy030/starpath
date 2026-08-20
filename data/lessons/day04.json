@@ -1,0 +1,11 @@
+{
+  "day":4,"title":"找到天空中的 W","chapter":"建立天空方向感","difficulty":1,"duration":"15分钟","goal":"通过 W/M 形轮廓独立识别仙后座","objects":["polaris","cassiopeia"],
+  "steps":[
+    {"id":"d04_s01","type":"intro","title":"北天的第二个路标","content":"仙后座最明显的特征不是某颗亮星，而是五颗主要恒星组成的 W 或 M 形。"},
+    {"id":"d04_s02","type":"learn","target":"cassiopeia","title":"记住这个形状","content":"不要先背恒星名字，只记住五颗主要恒星形成的折线：W 或 M。"},
+    {"id":"d04_s03","type":"guide","action":"polaris_to_cassiopeia","title":"从北极星扩展北天地图","steps":["找到北极星","观察北极星周围的北天区域","寻找五颗较亮星组成的 W/M","确认仙后座"],"hint":"不要找最亮的星，找一个完整的 W。"},
+    {"id":"d04_s04","type":"practice","mode":"shape_recognition","target":"cassiopeia","hideLabels":true,"hideLines":true,"instruction":"下面几组星点里，哪一组是仙后座？"},
+    {"id":"d04_s05","type":"quiz","target":"cassiopeia","question":"请在星空中找到仙后座","retryHint":"寻找五颗较亮星组成的 W/M。"}
+  ],
+  "completion":{"unlockDay":5,"knownObjects":["cassiopeia"],"ability":"北天路标识别 Lv1"}
+}

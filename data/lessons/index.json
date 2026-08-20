@@ -1,4 +1,9 @@
 [
   {"day":1,"file":"day01.json"},
-  {"day":2,"file":"day02.json"}
+  {"day":2,"file":"day02.json"},
+  {"day":3,"file":"day03.json"},
+  {"day":4,"file":"day04.json"},
+  {"day":5,"file":"day05.json"},
+  {"day":6,"file":"day06.json"},
+  {"day":7,"file":"day07.json"}
 ]

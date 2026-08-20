@@ -1,0 +1,12 @@
+{
+  "day":3,"title":"用北斗找到北极星","chapter":"建立天空方向感","difficulty":1,"duration":"15分钟","goal":"利用北斗七星找到北极星，并判断北方","objects":["ursa_major","polaris"],
+  "steps":[
+    {"id":"d03_s01","type":"intro","title":"北斗不只是一个勺子","content":"北斗七星还是北方天空中非常重要的导航工具。今天利用斗口两颗星找到北极星。"},
+    {"id":"d03_s02","type":"learn","target":"ursa_major","title":"先找到北斗","content":"记住北斗明显的勺子轮廓。真正用于寻找北极星的是斗口外侧的天璇和天枢。"},
+    {"id":"d03_s03","type":"guide","action":"ursa_to_polaris","title":"沿斗口寻找北极星","steps":["找到北斗七星","识别斗口的天璇和天枢","从天璇指向天枢","沿方向继续延长","约五倍两星间距处寻找北极星"],"hint":"斗口两星指北极，延长约五倍找到它。"},
+    {"id":"d03_s04","type":"quiz","target":"polaris","question":"现在请自己找到北极星","retryHint":"先重新找到北斗斗口的两颗星。"},
+    {"id":"d03_s05","type":"practice","mode":"blind_sky","target":"polaris","hideLabels":true,"hideLines":true,"instruction":"不看任何连线，再完成一次：北斗 → 北极星。"},
+    {"id":"d03_s06","type":"binocular","required":false,"equipment":"10x50","target":"polaris","fieldOfView":6,"hint":"先用肉眼定位北极星，再举起双筒，不要用双筒大范围搜索。"}
+  ],
+  "completion":{"unlockDay":4,"knownObjects":["ursa_major","polaris"],"ability":"方向定位 Lv1"}
+}

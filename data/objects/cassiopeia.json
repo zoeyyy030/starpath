@@ -1,0 +1,11 @@
+{
+  "id":"cassiopeia","name":"仙后座","description":"北天醒目的 W/M 形星座，是北斗之外寻找北方的重要路标。",
+  "stars":[
+    {"id":"caph","name":"王良一","en":"Caph","x":62,"y":25,"magnitudeSize":5,"description":"仙后座 W 形的一端。"},
+    {"id":"schedar","name":"王良四","en":"Schedar","x":69,"y":38,"magnitudeSize":6,"description":"仙后座较亮的主星。"},
+    {"id":"navi","name":"策","en":"Navi","x":77,"y":27,"magnitudeSize":5},
+    {"id":"ruchbah","name":"阁道三","en":"Ruchbah","x":84,"y":42,"magnitudeSize":5},
+    {"id":"segin","name":"阁道二","en":"Segin","x":92,"y":31,"magnitudeSize":4}
+  ],
+  "lines":[["caph","schedar"],["schedar","navi"],["navi","ruchbah"],["ruchbah","segin"]]
+}

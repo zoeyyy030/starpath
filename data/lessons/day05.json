@@ -1,0 +1,10 @@
+{
+  "day":5,"title":"学会测量天空","chapter":"建立天空方向感","difficulty":1,"duration":"15分钟","goal":"使用手势估算天空中的角距离","objects":["ursa_major","polaris"],
+  "steps":[
+    {"id":"d05_s01","type":"intro","title":"天空也可以测量","content":"观星时不用米或公里描述距离，而使用角度。你的手就是随身携带的天空尺子。"},
+    {"id":"d05_s02","type":"learn","title":"认识四把天空尺子","content":"伸直手臂时：小指约 1°，三指约 5°，握拳约 10°，拇指与小指完全张开约 20–25°。"},
+    {"id":"d05_s03","type":"practice","mode":"angle_estimation","instruction":"观察两颗星之间的距离，选择最接近的手势。","choices":[{"id":"finger","label":"小指","angle":1},{"id":"three_fingers","label":"三指","angle":5},{"id":"fist","label":"一拳","angle":10},{"id":"span","label":"张开手掌","angle":22}]},
+    {"id":"d05_s04","type":"practice","mode":"field_of_view_compare","equipment":"10x50","fieldOfView":6,"instruction":"10×50 双筒约 6° 的视场，最接近哪种手势大小？"}
+  ],
+  "completion":{"unlockDay":6,"knownObjects":[],"ability":"角距离估算 Lv1"}
+}
