@@ -1,0 +1,67 @@
+{
+  "day": 22,
+  "title": "找到飞马大四边形",
+  "chapterId": "autumn",
+  "chapter": "秋季星空与深空目标",
+  "difficulty": 2,
+  "duration": "15分钟",
+  "goal": "识别秋季重要的大四边形",
+  "objects": [
+    "pegasus"
+  ],
+  "steps": [
+    {
+      "id": "d22_s01",
+      "type": "intro",
+      "title": "秋季天空的新入口",
+      "content": "四颗较亮星围成一个很大的四边形，是秋季天空的重要路标。"
+    },
+    {
+      "id": "d22_s02",
+      "type": "learn",
+      "target": "pegasus",
+      "title": "观察四边形",
+      "content": "它比想象中大，内部星点相对稀疏。"
+    },
+    {
+      "id": "d22_s03",
+      "type": "practice",
+      "mode": "shape_recognition",
+      "title": "完成实战练习",
+      "instruction": "哪一个是飞马大四边形？",
+      "visual": "A □　B W　C 十字",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：大四边形"
+        },
+        {
+          "id": "b",
+          "label": "B：W"
+        },
+        {
+          "id": "c",
+          "label": "C：十字"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "d22_s04",
+      "type": "practice",
+      "mode": "blind_sky",
+      "title": "完成实战练习",
+      "instruction": "无连线找到飞马四边形。",
+      "target": "pegasus",
+      "hideLabels": true,
+      "hideLines": true
+    }
+  ],
+  "completion": {
+    "unlockDay": 23,
+    "knownObjects": [
+      "pegasus"
+    ],
+    "ability": "秋季路标识别 Lv1"
+  }
+}

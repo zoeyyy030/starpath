@@ -1,0 +1,20 @@
+{
+  "id": "altair",
+  "type": "star",
+  "name": "牛郎星",
+  "enName": "Altair",
+  "x": 54,
+  "y": 73,
+  "size": 6,
+  "points": [
+    {
+      "id": "altair",
+      "name": "牛郎星",
+      "en": "Altair",
+      "x": 54,
+      "y": 73,
+      "size": 6,
+      "color": "#fff1d8"
+    }
+  ]
+}

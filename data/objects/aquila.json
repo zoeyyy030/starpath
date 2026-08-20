@@ -1,0 +1,39 @@
+{
+  "id": "aquila",
+  "type": "constellation",
+  "name": "天鹰座",
+  "recognitionShape": "牛郎星三连星",
+  "points": [
+    {
+      "id": "tarazed",
+      "name": "河鼓三",
+      "x": 50,
+      "y": 65,
+      "size": 4
+    },
+    {
+      "id": "altair",
+      "name": "牛郎星",
+      "x": 54,
+      "y": 73,
+      "size": 6
+    },
+    {
+      "id": "alshain",
+      "name": "河鼓一",
+      "x": 59,
+      "y": 80,
+      "size": 4
+    }
+  ],
+  "lines": [
+    [
+      "tarazed",
+      "altair"
+    ],
+    [
+      "altair",
+      "alshain"
+    ]
+  ]
+}

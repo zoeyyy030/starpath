@@ -1,18 +1,70 @@
 {
   "day": 2,
-  "title": "寻找北极星",
+  "title": "找到北斗七星",
+  "chapterId": "orientation",
   "chapter": "建立天空方向感",
   "difficulty": 1,
   "duration": "15分钟",
-  "goal": "学会利用北斗七星找到北极星并判断北方",
-  "objects": ["ursa_major", "polaris"],
-  "steps": [
-    {"type":"intro","title":"天空中的指南针","content":"北极星接近北天极，可以帮助你在夜空中判断北方。"},
-    {"type":"learn","target":"ursa_major","title":"先认识北斗七星","content":"北斗由四颗斗身星和三颗斗柄星组成。先记住斗口的天璇与天枢。"},
-    {"type":"guide","action":"ursa_to_polaris","title":"沿斗口指向北极星","steps":["找到北斗七星","识别斗口的天璇与天枢","沿两星方向延长约五倍距离"],"hint":"斗口两星指北极，延长五倍找到它。"},
-    {"type":"quiz","target":"polaris","question":"请点击北极星","retryHint":"先找到斗口两颗星，再沿指向延长。"},
-    {"type":"practice","mode":"blind_sky","target":"polaris","title":"无标签再次定位","hideLabels":true,"hideLines":true,"retryHint":"回忆斗口两星的方向。"},
-    {"type":"binocular","equipment":"10x50","target":"polaris","fieldOfView":"6deg","hint":"先肉眼定位，再举起双筒。"}
+  "goal": "通过勺子形轮廓识别北斗",
+  "objects": [
+    "ursa_major",
+    "polaris"
   ],
-  "completion":{"unlockDay":3,"knownObjects":["polaris"],"ability":"方向定位 Lv1"}
+  "steps": [
+    {
+      "id": "d02_s01",
+      "type": "intro",
+      "title": "先找一个大勺子",
+      "content": "北斗七星由四颗斗身星和三颗斗柄星组成。先记图形，不急着背星名。"
+    },
+    {
+      "id": "d02_s02",
+      "type": "learn",
+      "target": "ursa_major",
+      "title": "认识北斗轮廓",
+      "content": "点击星点观察勺口、勺身与弯曲的斗柄。"
+    },
+    {
+      "id": "d02_s03",
+      "type": "practice",
+      "mode": "shape_recognition",
+      "title": "完成实战练习",
+      "instruction": "哪一个图形最像北斗？",
+      "visual": "A ·····　B ▱—⌒　C ∨∨",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：散乱星点"
+        },
+        {
+          "id": "b",
+          "label": "B：勺形轮廓"
+        },
+        {
+          "id": "c",
+          "label": "C：短直线"
+        }
+      ],
+      "answer": "b",
+      "success": "✓ 四星斗身加三星斗柄就是北斗。"
+    },
+    {
+      "id": "d02_s04",
+      "type": "practice",
+      "mode": "blind_sky",
+      "title": "完成实战练习",
+      "instruction": "关闭名称与连线，再找一次北斗。",
+      "target": "ursa_major",
+      "hideLabels": true,
+      "hideLines": true,
+      "retryHint": "先寻找四边形斗身。"
+    }
+  ],
+  "completion": {
+    "unlockDay": 3,
+    "knownObjects": [
+      "ursa_major"
+    ],
+    "ability": "北斗识别 Lv1"
+  }
 }

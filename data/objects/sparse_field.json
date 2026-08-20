@@ -1,0 +1,28 @@
+{
+  "id": "sparse_field",
+  "type": "training_field",
+  "name": "稀疏星野",
+  "points": [
+    {
+      "id": "sparse1",
+      "name": "背景星",
+      "x": 25,
+      "y": 30,
+      "size": 2
+    },
+    {
+      "id": "sparse2",
+      "name": "背景星",
+      "x": 60,
+      "y": 55,
+      "size": 2
+    },
+    {
+      "id": "sparse3",
+      "name": "背景星",
+      "x": 82,
+      "y": 28,
+      "size": 2
+    }
+  ]
+}

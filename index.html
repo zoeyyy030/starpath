@@ -1,55 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=no">
   <meta name="theme-color" content="#05070a">
-  <title>StarPath · 每日观星训练</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>StarPath V0.4｜30 天观星训练</title>
+  <link rel="stylesheet" href="css/app.css?v=0402">
 </head>
 <body>
-  <main class="catalog" id="catalog" aria-live="polite">
+  <main id="catalog" class="catalog" aria-live="polite">
     <header class="catalog-header">
-      <div class="brand">STARPATH</div>
-      <p class="catalog-kicker">30 天观星训练</p>
+      <div class="brand">STARPATH · V0.4</div>
+      <p class="eyebrow">10×50 双筒 · 30 天训练</p>
       <h1>建立你的天空地图</h1>
-      <p>选择一课开始训练。完成的课程会保留记录，随时可以回来复习。</p>
-      <div class="catalog-summary"><span id="completedCount">0</span> / <span id="lessonCount">0</span> 课已完成</div>
+      <p>从方向、亮星和形状开始，逐步练习双筒指向、星跳与独立观测。</p>
+      <div class="summary"><strong id="completedCount">0</strong> / <span id="lessonCount">30</span> 课完成</div>
     </header>
-    <section class="lesson-grid" id="lessonGrid" aria-label="课程列表"></section>
-    <p class="catalog-status" id="catalogStatus"></p>
+    <div id="devPanel" class="dev-panel hidden">
+      <strong>开发测试模式</strong><span id="devStatus"></span>
+      <button id="unlockAll">解锁全部</button><button id="resetProgress">重置进度</button>
+    </div>
+    <section id="chapterList" class="chapter-list" aria-label="课程章节"></section>
+    <p id="catalogStatus" class="status-text"></p>
   </main>
 
-  <main class="app hidden" id="app" aria-live="polite">
-    <a class="home-link" href="./" aria-label="返回课程列表">‹ 课程列表</a>
-    <header class="header">
-      <div class="eyebrow"><span id="dayTag">DAY --</span><span id="meta"></span></div>
+  <main id="player" class="player hidden" aria-live="polite">
+    <a class="catalog-link" href="./">‹ 课程目录</a>
+    <header class="lesson-header">
+      <div class="lesson-meta"><span id="dayTag">DAY --</span><span id="lessonStats"></span></div>
+      <p id="chapterName" class="chapter-name"></p>
       <h1 id="lessonTitle">正在加载课程…</h1>
       <p id="lessonGoal"></p>
-      <div class="progress" aria-label="课程进度"><i id="progressBar"></i></div>
+      <div id="stepDots" class="step-dots" aria-label="课程步骤进度"></div>
+      <small id="devStepId" class="dev-step hidden"></small>
     </header>
 
-    <section class="sky" id="sky" aria-label="互动星图">
+    <section id="sky" class="sky" aria-label="互动训练星图">
       <svg id="lineLayer" class="line-layer" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       <div id="starLayer"></div>
-      <div class="binocular" id="binocular" aria-hidden="true"><div class="bino-ring"></div></div>
-      <div class="sky-caption" id="skyCaption"></div>
+      <div id="binocular" class="binocular" aria-hidden="true"><div class="bino-ring"><span>10×50 · 6°</span></div></div>
+      <div id="skyCaption" class="sky-caption"></div>
     </section>
 
-    <section class="card" id="stepCard">
-      <div class="step-kicker" id="stepKicker"></div>
+    <section id="stepCard" class="step-card">
+      <div id="stepKicker" class="step-kicker"></div>
       <h2 id="stepTitle"></h2>
       <p id="stepContent"></p>
       <ol id="guideList" class="guide-list"></ol>
       <div id="interactionPanel" class="interaction-panel"></div>
-      <p id="feedback" class="feedback"></p>
+      <p id="feedback" class="feedback" role="status"></p>
     </section>
 
-    <nav class="controls">
-      <button class="button ghost" id="backButton">上一步</button>
-      <button class="button primary" id="actionButton">开始训练</button>
+    <nav class="controls" aria-label="课程导航">
+      <button id="backButton" class="button ghost">上一步</button>
+      <button id="actionButton" class="button primary">继续</button>
     </nav>
   </main>
-  <script src="app.js"></script>
+  <script type="module" src="js/app.js?v=0402"></script>
 </body>
 </html>

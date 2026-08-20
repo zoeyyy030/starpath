@@ -1,11 +1,85 @@
 {
-  "day":6,"title":"把星图对上真实天空","chapter":"建立天空方向感","difficulty":1,"duration":"15分钟","goal":"根据观察方向正确旋转星图，并与真实天空对应","objects":["ursa_major","polaris","cassiopeia"],
-  "steps":[
-    {"id":"d06_s01","type":"intro","title":"为什么星图总感觉是反的？","content":"星图不是普通地图。观星时应根据自己面朝的方向旋转星图，而不是永远保持北方朝上。"},
-    {"id":"d06_s02","type":"guide","action":"orient_sky_map","title":"先确定你面朝哪里","steps":["找到北极星","确认北方","选择自己当前面朝的方向","把星图对应方向转到屏幕下方","重新比较真实天空"]},
-    {"id":"d06_s03","type":"practice","mode":"rotate_sky_map","instruction":"你现在面向北方。旋转星图，把北方一侧调整到屏幕下方。","targetOrientation":"north"},
-    {"id":"d06_s04","type":"practice","mode":"sky_map_match","instruction":"下面哪张星图与当前天空的路标关系一致？"},
-    {"id":"d06_s05","type":"practice","mode":"sky_map_recall","instruction":"先判断北斗、北极星和仙后座的位置，再显示答案验证。","hideLabels":true,"hideLines":true}
+  "day": 6,
+  "title": "把星图对上真实天空",
+  "chapterId": "orientation",
+  "chapter": "建立天空方向感",
+  "difficulty": 1,
+  "duration": "15分钟",
+  "goal": "根据观察方向正确旋转星图，并与真实天空对应",
+  "objects": [
+    "ursa_major",
+    "polaris",
+    "cassiopeia"
   ],
-  "completion":{"unlockDay":7,"knownObjects":[],"ability":"星图对应 Lv1"}
+  "steps": [
+    {
+      "id": "d06_s01",
+      "type": "intro",
+      "title": "星图为什么总像是反的？",
+      "content": "星图不是普通地图，应把自己面对的方向转到屏幕下方。"
+    },
+    {
+      "id": "d06_s02",
+      "type": "guide",
+      "title": "先确定面朝方向",
+      "content": "跟随星图分段建立路径。",
+      "steps": [
+        "找到北极星",
+        "确认北方",
+        "把北方转到屏幕下方",
+        "再比较真实天空"
+      ],
+      "path": [
+        "dubhe",
+        "polaris",
+        "schedar"
+      ]
+    },
+    {
+      "id": "d06_s03",
+      "type": "practice",
+      "mode": "rotate_sky_map",
+      "title": "完成实战练习",
+      "instruction": "你面向北方，请旋转星图。",
+      "targetAngle": 180
+    },
+    {
+      "id": "d06_s04",
+      "type": "practice",
+      "mode": "sky_map_match",
+      "title": "完成实战练习",
+      "instruction": "哪张图与北天路标关系一致？",
+      "visual": "北斗　★北极星　W",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：左右颠倒"
+        },
+        {
+          "id": "b",
+          "label": "B：路标对应"
+        },
+        {
+          "id": "c",
+          "label": "C：方向相反"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "d06_s05",
+      "type": "practice",
+      "mode": "sky_map_recall",
+      "title": "完成实战练习",
+      "instruction": "先在脑中放好三个路标，再显示骨架。",
+      "answerVisual": "北斗 → ★ 北极星 → W 仙后座",
+      "hideLabels": true,
+      "hideLines": true
+    }
+  ],
+  "completion": {
+    "unlockDay": 7,
+    "knownObjects": [],
+    "ability": "星图对应 Lv1"
+  }
 }

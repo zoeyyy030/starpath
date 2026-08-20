@@ -1,0 +1,66 @@
+{
+  "day": 12,
+  "title": "拼出完整夏季大三角",
+  "chapterId": "summer",
+  "chapter": "夏季大三角与星座骨架",
+  "difficulty": 2,
+  "duration": "18分钟",
+  "goal": "不依赖名称识别三颗亮星的位置关系",
+  "objects": [
+    "summer_triangle"
+  ],
+  "steps": [
+    {
+      "id": "d12_s01",
+      "type": "intro",
+      "title": "三颗亮星连接成地图",
+      "content": "织女星、天津四、牛郎星组成跨越大片天空的夏季大三角。"
+    },
+    {
+      "id": "d12_s02",
+      "type": "learn",
+      "target": "summer_triangle",
+      "title": "观察三点关系",
+      "content": "不要死记连线，记住一高、一侧、一低的空间关系。"
+    },
+    {
+      "id": "d12_s03",
+      "type": "practice",
+      "mode": "sequence_click",
+      "title": "完成实战练习",
+      "instruction": "依次点击织女星、天津四、牛郎星。",
+      "sequence": [
+        "vega",
+        "deneb",
+        "altair"
+      ],
+      "sequenceLabels": [
+        "织女星",
+        "天津四",
+        "牛郎星"
+      ],
+      "hideLabels": true,
+      "hideLines": true
+    },
+    {
+      "id": "d12_s04",
+      "type": "practice",
+      "mode": "blind_sky",
+      "title": "完成实战练习",
+      "instruction": "关闭全部辅助，再找到三角中的织女星。",
+      "target": "vega",
+      "hideLabels": true,
+      "hideLines": true
+    }
+  ],
+  "completion": {
+    "unlockDay": 13,
+    "knownObjects": [
+      "vega",
+      "deneb",
+      "altair",
+      "summer_triangle"
+    ],
+    "ability": "夏季大三角 Lv1"
+  }
+}

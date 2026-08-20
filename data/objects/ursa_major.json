@@ -1,13 +1,92 @@
 {
-  "id":"ursa_major","name":"北斗七星","description":"大熊座中七颗醒目的亮星组成勺形，是寻找北极星最常用的路标。",
-  "stars":[
-    {"id":"dubhe","name":"天枢","en":"Dubhe","x":35,"y":31,"magnitudeSize":6,"description":"北斗斗口上方的指极星。"},
-    {"id":"merak","name":"天璇","en":"Merak","x":38,"y":45,"magnitudeSize":5,"description":"北斗斗口下方的指极星。"},
-    {"id":"phecda","name":"天玑","en":"Phecda","x":51,"y":49,"magnitudeSize":4},
-    {"id":"megrez","name":"天权","en":"Megrez","x":54,"y":34,"magnitudeSize":4},
-    {"id":"alioth","name":"玉衡","en":"Alioth","x":65,"y":31,"magnitudeSize":5},
-    {"id":"mizar","name":"开阳","en":"Mizar","x":75,"y":36,"magnitudeSize":5},
-    {"id":"alkaid","name":"摇光","en":"Alkaid","x":84,"y":44,"magnitudeSize":5}
+  "id": "ursa_major",
+  "type": "constellation",
+  "name": "北斗七星",
+  "recognitionShape": "勺形",
+  "description": "大熊座中七颗醒目恒星组成的勺形路标。",
+  "points": [
+    {
+      "id": "dubhe",
+      "name": "天枢",
+      "en": "Dubhe",
+      "x": 27,
+      "y": 39,
+      "size": 6,
+      "description": "斗口上方指极星。"
+    },
+    {
+      "id": "merak",
+      "name": "天璇",
+      "en": "Merak",
+      "x": 30,
+      "y": 52,
+      "size": 5,
+      "description": "斗口下方指极星。"
+    },
+    {
+      "id": "phecda",
+      "name": "天玑",
+      "x": 42,
+      "y": 55,
+      "size": 4
+    },
+    {
+      "id": "megrez",
+      "name": "天权",
+      "x": 45,
+      "y": 42,
+      "size": 4
+    },
+    {
+      "id": "alioth",
+      "name": "玉衡",
+      "x": 56,
+      "y": 38,
+      "size": 5
+    },
+    {
+      "id": "mizar",
+      "name": "开阳",
+      "x": 66,
+      "y": 42,
+      "size": 5
+    },
+    {
+      "id": "alkaid",
+      "name": "摇光",
+      "x": 75,
+      "y": 50,
+      "size": 5
+    }
   ],
-  "lines":[["dubhe","merak"],["merak","phecda"],["phecda","megrez"],["megrez","dubhe"],["megrez","alioth"],["alioth","mizar"],["mizar","alkaid"]]
+  "lines": [
+    [
+      "dubhe",
+      "merak"
+    ],
+    [
+      "merak",
+      "phecda"
+    ],
+    [
+      "phecda",
+      "megrez"
+    ],
+    [
+      "megrez",
+      "dubhe"
+    ],
+    [
+      "megrez",
+      "alioth"
+    ],
+    [
+      "alioth",
+      "mizar"
+    ],
+    [
+      "mizar",
+      "alkaid"
+    ]
+  ]
 }

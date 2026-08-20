@@ -1,12 +1,109 @@
 {
-  "day":7,"title":"第一次闭卷看天空","chapter":"建立天空方向感","difficulty":2,"duration":"20分钟","goal":"脱离辅助提示，独立完成一次北天导航","objects":["ursa_major","polaris","cassiopeia"],
-  "steps":[
-    {"id":"d07_s01","type":"intro","title":"今天不学新东西","content":"今天关闭大部分提示，看看这一周学到的内容是否已经真正变成你的天空地图。"},
-    {"id":"d07_s02","type":"practice","mode":"blind_sky","target":"ursa_major","hideLabels":true,"hideLines":true,"instruction":"第一关：找到北斗七星。"},
-    {"id":"d07_s03","type":"quiz","target":"polaris","question":"第二关：利用北斗找到北极星","retryHint":"回忆斗口两星和五倍距离。"},
-    {"id":"d07_s04","type":"practice","mode":"shape_recognition","target":"cassiopeia","hideLabels":true,"hideLines":true,"instruction":"第三关：辨认仙后座的 W/M 形。"},
-    {"id":"d07_s05","type":"practice","mode":"direction_check","target":"north","instruction":"第四关：根据北极星判断北方。"},
-    {"id":"d07_s06","type":"practice","mode":"sky_map_recall","instruction":"最后一关：把北斗、北极星和仙后座放回正确的大致位置。"}
+  "day": 7,
+  "title": "第一次闭卷看天空",
+  "chapterId": "orientation",
+  "chapter": "建立天空方向感",
+  "difficulty": 2,
+  "duration": "20分钟",
+  "goal": "脱离辅助提示，独立完成一次北天导航",
+  "objects": [
+    "ursa_major",
+    "polaris",
+    "cassiopeia"
   ],
-  "completion":{"unlockDay":8,"knownObjects":["ursa_major","polaris","cassiopeia"],"ability":"北天导航 Lv1"}
+  "steps": [
+    {
+      "id": "d07_s01",
+      "type": "intro",
+      "title": "今天不学新东西",
+      "content": "关闭大部分提示，检验北天地图是否已经形成。"
+    },
+    {
+      "id": "d07_s02",
+      "type": "practice",
+      "mode": "blind_sky",
+      "title": "完成实战练习",
+      "instruction": "第一关：找到北斗。",
+      "target": "ursa_major",
+      "hideLabels": true,
+      "hideLines": true
+    },
+    {
+      "id": "d07_s03",
+      "type": "quiz",
+      "target": "polaris",
+      "question": "第二关：利用北斗找到北极星",
+      "retryHint": "回忆斗口两星与五倍距离。"
+    },
+    {
+      "id": "d07_s04",
+      "type": "practice",
+      "mode": "shape_recognition",
+      "title": "完成实战练习",
+      "instruction": "第三关：辨认仙后座。",
+      "visual": "A ·····　B ·∨·∨·　C ▱—",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：散乱星点"
+        },
+        {
+          "id": "b",
+          "label": "B：W / M"
+        },
+        {
+          "id": "c",
+          "label": "C：短直线"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "d07_s05",
+      "type": "practice",
+      "mode": "direction_check",
+      "title": "完成实战练习",
+      "instruction": "第四关：判断北方。",
+      "visual": "★ 北极星 → 地平线",
+      "choices": [
+        {
+          "id": "east",
+          "label": "东"
+        },
+        {
+          "id": "south",
+          "label": "南"
+        },
+        {
+          "id": "west",
+          "label": "西"
+        },
+        {
+          "id": "north",
+          "label": "北"
+        }
+      ],
+      "answer": "north"
+    },
+    {
+      "id": "d07_s06",
+      "type": "practice",
+      "mode": "sky_map_recall",
+      "title": "完成实战练习",
+      "instruction": "最后重建三者位置。",
+      "answerVisual": "北斗 → ★ 北极星 → W 仙后座"
+    }
+  ],
+  "completion": {
+    "unlockDay": 8,
+    "knownObjects": [
+      "ursa_major",
+      "polaris",
+      "cassiopeia"
+    ],
+    "ability": "北天导航 Lv1",
+    "resultKicker": "第一阶段完成",
+    "resultTitle": "你的北天地图已经建立",
+    "summary": "已掌握北斗、北极星与仙后座，获得北天导航 Lv1。下一阶段进入夏季大三角。"
+  }
 }

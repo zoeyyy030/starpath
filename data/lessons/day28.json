@@ -1,0 +1,85 @@
+{
+  "day": 28,
+  "title": "月球双筒训练",
+  "chapterId": "autumn",
+  "chapter": "秋季星空与深空目标",
+  "difficulty": 2,
+  "duration": "18分钟",
+  "goal": "使用 10×50 观察月球整体结构",
+  "objects": [
+    "moon"
+  ],
+  "steps": [
+    {
+      "id": "d28_s01",
+      "type": "intro",
+      "title": "满月并非地形观察最佳时机",
+      "content": "太阳斜射时，明暗分界线附近的山脉和坑壁阴影更明显。"
+    },
+    {
+      "id": "d28_s02",
+      "type": "learn",
+      "target": "moon",
+      "title": "认识月海与明暗分界线",
+      "content": "月海是较暗的大区域，Terminator 是亮面与暗面的分界。"
+    },
+    {
+      "id": "d28_s03",
+      "type": "practice",
+      "mode": "comparison",
+      "title": "完成实战练习",
+      "instruction": "哪种光照更容易看出地形起伏？",
+      "visual": "A 满月正面照亮　B 明暗分界线斜射",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：满月"
+        },
+        {
+          "id": "b",
+          "label": "B：有明暗分界线"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "d28_s04",
+      "type": "practice",
+      "mode": "observation_check",
+      "title": "完成实战练习",
+      "instruction": "记录月球整体观察。",
+      "checks": [
+        {
+          "id": "maria",
+          "label": "分辨出较暗的月海"
+        },
+        {
+          "id": "terminator",
+          "label": "找到明暗分界线"
+        },
+        {
+          "id": "shadows",
+          "label": "注意到坑壁或山脉阴影"
+        }
+      ],
+      "minChecks": 1
+    },
+    {
+      "id": "d28_s05",
+      "type": "binocular",
+      "title": "10×50 双筒模拟",
+      "target": "moon",
+      "fieldOfView": 6,
+      "holdMs": 500,
+      "hint": "将月球保持在中央，观察整体而非夸张放大。",
+      "required": false
+    }
+  ],
+  "completion": {
+    "unlockDay": 29,
+    "knownObjects": [
+      "moon"
+    ],
+    "ability": "月球双筒 Lv1"
+  }
+}

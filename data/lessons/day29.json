@@ -1,0 +1,92 @@
+{
+  "day": 29,
+  "title": "全局闭卷",
+  "chapterId": "autumn",
+  "chapter": "秋季星空与深空目标",
+  "difficulty": 4,
+  "duration": "25分钟",
+  "goal": "不依赖 App 重建本月学习的天空骨架",
+  "objects": [
+    "ursa_major",
+    "polaris",
+    "cassiopeia",
+    "summer_triangle",
+    "pegasus",
+    "andromeda"
+  ],
+  "steps": [
+    {
+      "id": "d29_s01",
+      "type": "intro",
+      "title": "把四周天空连成一张图",
+      "content": "这次跨越北天、夏季与秋季三张局部地图。"
+    },
+    {
+      "id": "d29_s02",
+      "type": "practice",
+      "mode": "sky_map_recall",
+      "title": "完成实战练习",
+      "instruction": "先重建三组天空路标。",
+      "answerVisual": "北斗—北极星—仙后　｜　织女—天津四—牛郎　｜　飞马—仙女"
+    },
+    {
+      "id": "d29_s03",
+      "type": "practice",
+      "mode": "sequence_click",
+      "title": "完成实战练习",
+      "instruction": "按路线点击八个主路标。",
+      "sequence": [
+        "dubhe",
+        "polaris",
+        "schedar",
+        "vega",
+        "deneb",
+        "altair",
+        "markab",
+        "alpheratz"
+      ],
+      "hideLabels": true,
+      "hideLines": true,
+      "retryHint": "回到最近确认的天空区域。"
+    },
+    {
+      "id": "d29_s04",
+      "type": "practice",
+      "mode": "direction_check",
+      "title": "完成实战练习",
+      "instruction": "最后确认北方。",
+      "visual": "★ 北极星 → 地平线",
+      "choices": [
+        {
+          "id": "east",
+          "label": "东"
+        },
+        {
+          "id": "south",
+          "label": "南"
+        },
+        {
+          "id": "west",
+          "label": "西"
+        },
+        {
+          "id": "north",
+          "label": "北"
+        }
+      ],
+      "answer": "north"
+    }
+  ],
+  "completion": {
+    "unlockDay": 30,
+    "knownObjects": [
+      "ursa_major",
+      "polaris",
+      "cassiopeia",
+      "summer_triangle",
+      "pegasus",
+      "andromeda"
+    ],
+    "ability": "全局天空地图 Lv1"
+  }
+}

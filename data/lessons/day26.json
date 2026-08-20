@@ -1,0 +1,68 @@
+{
+  "day": 26,
+  "title": "寻找双星团",
+  "chapterId": "autumn",
+  "chapter": "秋季星空与深空目标",
+  "difficulty": 3,
+  "duration": "20分钟",
+  "goal": "用 10×50 找到英仙座双星团",
+  "objects": [
+    "cassiopeia",
+    "perseus",
+    "double_cluster"
+  ],
+  "steps": [
+    {
+      "id": "d26_s01",
+      "type": "intro",
+      "title": "双筒的甜蜜点",
+      "content": "肉眼可能只见一小团模糊区域，10×50 会展开成两个密集星群。"
+    },
+    {
+      "id": "d26_s02",
+      "type": "guide",
+      "title": "从仙后座走向双星团",
+      "content": "跟随星图分段建立路径。",
+      "steps": [
+        "仙后座 W",
+        "英仙座方向",
+        "两团相邻密集星点"
+      ],
+      "path": [
+        "ruchbah",
+        "mirfak",
+        "double_cluster"
+      ]
+    },
+    {
+      "id": "d26_s03",
+      "type": "practice",
+      "mode": "star_hop",
+      "title": "完成实战练习",
+      "instruction": "沿路标找到双星团。",
+      "sequence": [
+        "ruchbah",
+        "mirfak",
+        "double_cluster"
+      ],
+      "hideLabels": true,
+      "hideLines": true
+    },
+    {
+      "id": "d26_s04",
+      "type": "binocular",
+      "title": "10×50 双筒模拟",
+      "target": "double_cluster",
+      "fieldOfView": 6,
+      "holdMs": 500,
+      "hint": "外围保留肉眼星空，将双星团移到中央。"
+    }
+  ],
+  "completion": {
+    "unlockDay": 27,
+    "knownObjects": [
+      "double_cluster"
+    ],
+    "ability": "双筒星团 Lv1"
+  }
+}

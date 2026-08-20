@@ -1,0 +1,80 @@
+{
+  "day": 14,
+  "title": "第二阶段闭卷",
+  "chapterId": "summer",
+  "chapter": "夏季大三角与星座骨架",
+  "difficulty": 2,
+  "duration": "20分钟",
+  "goal": "闭卷重建夏季大三角与三个所属星座",
+  "objects": [
+    "summer_triangle",
+    "lyra",
+    "cygnus",
+    "aquila"
+  ],
+  "steps": [
+    {
+      "id": "d14_s01",
+      "type": "intro",
+      "title": "关闭名称，重新找回夏季地图",
+      "content": "这次不教新知识，只检验三颗导航星与星座骨架。"
+    },
+    {
+      "id": "d14_s02",
+      "type": "practice",
+      "mode": "sequence_click",
+      "title": "完成实战练习",
+      "instruction": "依次找到织女星、天津四、牛郎星。",
+      "sequence": [
+        "vega",
+        "deneb",
+        "altair"
+      ],
+      "hideLabels": true,
+      "hideLines": true
+    },
+    {
+      "id": "d14_s03",
+      "type": "practice",
+      "mode": "shape_recognition",
+      "title": "完成实战练习",
+      "instruction": "辨认天琴座的小平行四边形。",
+      "visual": "A ★+◇　B W　C 十字",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：亮星与小四边形"
+        },
+        {
+          "id": "b",
+          "label": "B：W"
+        },
+        {
+          "id": "c",
+          "label": "C：十字"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "d14_s04",
+      "type": "practice",
+      "mode": "sky_map_recall",
+      "title": "完成实战练习",
+      "instruction": "重建三颗亮星与三个星座。",
+      "answerVisual": "织女星·天琴　—　天津四·天鹅　—　牛郎星·天鹰"
+    }
+  ],
+  "completion": {
+    "unlockDay": 15,
+    "knownObjects": [
+      "summer_triangle",
+      "lyra",
+      "cygnus",
+      "aquila"
+    ],
+    "ability": "夏季导航 Lv1",
+    "resultKicker": "第二阶段完成",
+    "resultTitle": "夏季星空已经有了骨架"
+  }
+}

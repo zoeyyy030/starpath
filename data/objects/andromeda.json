@@ -1,0 +1,52 @@
+{
+  "id": "andromeda",
+  "type": "constellation",
+  "name": "仙女座",
+  "recognitionShape": "从壁宿二延伸的星链",
+  "points": [
+    {
+      "id": "alpheratz",
+      "name": "壁宿二",
+      "x": 61,
+      "y": 25,
+      "size": 6
+    },
+    {
+      "id": "mirach",
+      "name": "奎宿九",
+      "en": "Mirach",
+      "x": 72,
+      "y": 37,
+      "size": 5
+    },
+    {
+      "id": "mu_and",
+      "name": "仙女座 μ",
+      "x": 78,
+      "y": 27,
+      "size": 4
+    },
+    {
+      "id": "almach",
+      "name": "天大将军一",
+      "en": "Almach",
+      "x": 88,
+      "y": 49,
+      "size": 5
+    }
+  ],
+  "lines": [
+    [
+      "alpheratz",
+      "mirach"
+    ],
+    [
+      "mirach",
+      "almach"
+    ],
+    [
+      "mirach",
+      "mu_and"
+    ]
+  ]
+}

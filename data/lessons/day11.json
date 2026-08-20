@@ -1,0 +1,69 @@
+{
+  "day": 11,
+  "title": "找到牛郎星",
+  "chapterId": "summer",
+  "chapter": "夏季大三角与星座骨架",
+  "difficulty": 1,
+  "duration": "15分钟",
+  "goal": "识别牛郎星及其两侧较暗伴星",
+  "objects": [
+    "altair",
+    "aquila"
+  ],
+  "steps": [
+    {
+      "id": "d11_s01",
+      "type": "intro",
+      "title": "第三个导航星",
+      "content": "牛郎星两侧各有一颗较暗星，形成醒目的短直线。"
+    },
+    {
+      "id": "d11_s02",
+      "type": "learn",
+      "target": "aquila",
+      "title": "认出三连星",
+      "content": "牛郎星在中间最亮，两侧伴星帮助确认。"
+    },
+    {
+      "id": "d11_s03",
+      "type": "practice",
+      "mode": "shape_recognition",
+      "title": "完成实战练习",
+      "instruction": "哪一个结构属于牛郎星？",
+      "visual": "A ·★·　B W　C ◇",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：短直线三颗星"
+        },
+        {
+          "id": "b",
+          "label": "B：W"
+        },
+        {
+          "id": "c",
+          "label": "C：四边形"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "d11_s04",
+      "type": "practice",
+      "mode": "blind_sky",
+      "title": "完成实战练习",
+      "instruction": "无名称找到牛郎星。",
+      "target": "altair",
+      "hideLabels": true,
+      "hideLines": true
+    }
+  ],
+  "completion": {
+    "unlockDay": 12,
+    "knownObjects": [
+      "altair",
+      "aquila"
+    ],
+    "ability": "天鹰座识别 Lv1"
+  }
+}

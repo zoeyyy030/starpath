@@ -1,17 +1,73 @@
 {
   "day": 1,
-  "title": "找到夏季大三角",
+  "title": "确认东南西北",
+  "chapterId": "orientation",
   "chapter": "建立天空方向感",
   "difficulty": 1,
   "duration": "15分钟",
-  "goal": "在夏季夜空中认出织女星、天津四和牛郎星",
-  "objects": ["summer_triangle"],
-  "steps": [
-    {"type":"intro","title":"今晚，从三颗亮星开始","content":"夏季大三角由织女星、天津四和牛郎星组成，是建立夏季天空地图的入口。"},
-    {"type":"learn","target":"summer_triangle","title":"认识夏季大三角","content":"先观察三颗亮星的位置与三角形轮廓，再逐一点击星点查看。"},
-    {"type":"quiz","target":"vega","question":"请点击织女星","retryHint":"寻找三角形西侧最亮的那颗星。"},
-    {"type":"practice","mode":"blind_sky","target":"altair","title":"无标签找到牛郎星","hideLabels":true,"hideLines":true,"retryHint":"它位于大三角偏南的位置。"},
-    {"type":"binocular","equipment":"10x50","target":"deneb","fieldOfView":"6deg","hint":"先肉眼找到天津四，再移动双筒视场。"}
+  "goal": "知道自己面朝哪个方向，并理解天顶与地平线",
+  "objects": [
+    "ursa_major",
+    "polaris"
   ],
-  "completion":{"unlockDay":2,"knownObjects":["summer_triangle"],"ability":"夏季亮星定位 Lv1"}
+  "steps": [
+    {
+      "id": "d01_s01",
+      "type": "intro",
+      "title": "先给天空建立坐标",
+      "content": "地平线围绕着你，头顶最高点叫天顶。方向感是所有找星训练的起点。"
+    },
+    {
+      "id": "d01_s02",
+      "type": "learn",
+      "target": "polaris",
+      "title": "北极星与北方",
+      "content": "北极星接近北天极，它在地平线上的方向就是北方。"
+    },
+    {
+      "id": "d01_s03",
+      "type": "practice",
+      "mode": "direction_check",
+      "title": "完成实战练习",
+      "instruction": "根据北极星判断北方",
+      "visual": "★ 北极星<br>↓<br>地平线",
+      "choices": [
+        {
+          "id": "east",
+          "label": "东"
+        },
+        {
+          "id": "south",
+          "label": "南"
+        },
+        {
+          "id": "west",
+          "label": "西"
+        },
+        {
+          "id": "north",
+          "label": "北"
+        }
+      ],
+      "answer": "north",
+      "success": "✓ 北极星所在的地平线方向就是北方。"
+    },
+    {
+      "id": "d01_s04",
+      "type": "binocular",
+      "title": "10×50 双筒模拟",
+      "target": "polaris",
+      "fieldOfView": 6,
+      "holdMs": 500,
+      "hint": "肉眼锁定北极星后再举镜，将它保持在中央。",
+      "required": false
+    }
+  ],
+  "completion": {
+    "unlockDay": 2,
+    "knownObjects": [
+      "polaris"
+    ],
+    "ability": "天空方向感 Lv1"
+  }
 }

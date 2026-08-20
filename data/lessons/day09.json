@@ -1,0 +1,68 @@
+{
+  "day": 9,
+  "title": "从织女星找到天琴座",
+  "chapterId": "summer",
+  "chapter": "夏季大三角与星座骨架",
+  "difficulty": 1,
+  "duration": "15分钟",
+  "goal": "识别织女星旁边的小平行四边形",
+  "objects": [
+    "vega",
+    "lyra"
+  ],
+  "steps": [
+    {
+      "id": "d09_s01",
+      "type": "intro",
+      "title": "别只记一颗孤星",
+      "content": "织女星旁边四颗较暗星组成小平行四边形，这就是天琴座主体。"
+    },
+    {
+      "id": "d09_s02",
+      "type": "learn",
+      "target": "lyra",
+      "title": "寻找小四边形",
+      "content": "先找织女星，再看它旁边紧凑的四星结构。"
+    },
+    {
+      "id": "d09_s03",
+      "type": "practice",
+      "mode": "shape_recognition",
+      "title": "完成实战练习",
+      "instruction": "哪一个是天琴座主体？",
+      "visual": "A ◇+★　B W　C 十字",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：亮星旁小四边形"
+        },
+        {
+          "id": "b",
+          "label": "B：W 形"
+        },
+        {
+          "id": "c",
+          "label": "C：大十字"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "d09_s04",
+      "type": "practice",
+      "mode": "blind_sky",
+      "title": "完成实战练习",
+      "instruction": "无连线找到天琴座。",
+      "target": "lyra",
+      "hideLabels": true,
+      "hideLines": true
+    }
+  ],
+  "completion": {
+    "unlockDay": 10,
+    "knownObjects": [
+      "lyra"
+    ],
+    "ability": "天琴座识别 Lv1"
+  }
+}

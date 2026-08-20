@@ -1,0 +1,62 @@
+{
+  "day": 16,
+  "title": "移动一个双筒视场",
+  "chapterId": "binocular",
+  "chapter": "双筒使用与星跳基础",
+  "difficulty": 2,
+  "duration": "15分钟",
+  "goal": "理解约 6° 双筒视场的尺度",
+  "objects": [
+    "vega",
+    "lyra"
+  ],
+  "steps": [
+    {
+      "id": "d16_s01",
+      "type": "intro",
+      "title": "一次只移动一个视场",
+      "content": "10×50 常见教学视场约 6°，接近伸直手臂三指宽。"
+    },
+    {
+      "id": "d16_s02",
+      "type": "practice",
+      "mode": "field_of_view_compare",
+      "title": "完成实战练习",
+      "instruction": "哪种手势最接近 6°？",
+      "visual": "◯ 6°",
+      "choices": [
+        {
+          "id": "one",
+          "label": "小指 1°"
+        },
+        {
+          "id": "three",
+          "label": "三指 5°"
+        },
+        {
+          "id": "fist",
+          "label": "一拳 10°"
+        }
+      ],
+      "answer": "three"
+    },
+    {
+      "id": "d16_s03",
+      "type": "practice",
+      "mode": "sequence_click",
+      "title": "完成实战练习",
+      "instruction": "从织女星移动到天琴座旁两颗路标星。",
+      "sequence": [
+        "vega",
+        "sheliak",
+        "sulafat"
+      ],
+      "hideLabels": true
+    }
+  ],
+  "completion": {
+    "unlockDay": 17,
+    "knownObjects": [],
+    "ability": "视场尺度 Lv1"
+  }
+}

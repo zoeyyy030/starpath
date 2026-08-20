@@ -1,0 +1,20 @@
+{
+  "id": "deneb",
+  "type": "star",
+  "name": "天津四",
+  "enName": "Deneb",
+  "x": 70,
+  "y": 23,
+  "size": 6,
+  "points": [
+    {
+      "id": "deneb",
+      "name": "天津四",
+      "en": "Deneb",
+      "x": 70,
+      "y": 23,
+      "size": 6,
+      "color": "#eef4ff"
+    }
+  ]
+}

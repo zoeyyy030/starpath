@@ -1,0 +1,60 @@
+{
+  "id": "star_chain",
+  "type": "training_field",
+  "name": "训练星链",
+  "points": [
+    {
+      "id": "chain1",
+      "name": "星链 1",
+      "x": 36,
+      "y": 40,
+      "size": 3
+    },
+    {
+      "id": "chain2",
+      "name": "星链 2",
+      "x": 45,
+      "y": 45,
+      "size": 3
+    },
+    {
+      "id": "chain3",
+      "name": "星链 3",
+      "x": 54,
+      "y": 42,
+      "size": 4
+    },
+    {
+      "id": "chain4",
+      "name": "星链 4",
+      "x": 63,
+      "y": 49,
+      "size": 3
+    },
+    {
+      "id": "chain5",
+      "name": "星链 5",
+      "x": 72,
+      "y": 45,
+      "size": 4
+    }
+  ],
+  "lines": [
+    [
+      "chain1",
+      "chain2"
+    ],
+    [
+      "chain2",
+      "chain3"
+    ],
+    [
+      "chain3",
+      "chain4"
+    ],
+    [
+      "chain4",
+      "chain5"
+    ]
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "pegasus",
+  "type": "constellation",
+  "name": "飞马大四边形",
+  "recognitionShape": "大四边形",
+  "points": [
+    {
+      "id": "markab",
+      "name": "室宿一",
+      "en": "Markab",
+      "x": 24,
+      "y": 62,
+      "size": 5
+    },
+    {
+      "id": "scheat",
+      "name": "室宿二",
+      "en": "Scheat",
+      "x": 20,
+      "y": 27,
+      "size": 5
+    },
+    {
+      "id": "algenib",
+      "name": "壁宿一",
+      "en": "Algenib",
+      "x": 64,
+      "y": 60,
+      "size": 5
+    },
+    {
+      "id": "alpheratz",
+      "name": "壁宿二",
+      "en": "Alpheratz",
+      "x": 61,
+      "y": 25,
+      "size": 6
+    }
+  ],
+  "lines": [
+    [
+      "markab",
+      "scheat"
+    ],
+    [
+      "scheat",
+      "alpheratz"
+    ],
+    [
+      "alpheratz",
+      "algenib"
+    ],
+    [
+      "algenib",
+      "markab"
+    ]
+  ]
+}

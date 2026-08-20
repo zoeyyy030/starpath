@@ -1,0 +1,65 @@
+{
+  "day": 19,
+  "title": "寻找星链",
+  "chapterId": "binocular",
+  "chapter": "双筒使用与星跳基础",
+  "difficulty": 2,
+  "duration": "15分钟",
+  "goal": "把连续星点作为导航路径",
+  "objects": [
+    "star_chain",
+    "vega"
+  ],
+  "steps": [
+    {
+      "id": "d19_s01",
+      "type": "intro",
+      "title": "把散点连成路",
+      "content": "三到五颗连续排列的星可以成为双筒移动时的临时路标。"
+    },
+    {
+      "id": "d19_s02",
+      "type": "learn",
+      "target": "star_chain",
+      "title": "观察星链",
+      "content": "记住弯曲方向与星间距，而不是星名。"
+    },
+    {
+      "id": "d19_s03",
+      "type": "practice",
+      "mode": "sequence_click",
+      "title": "完成实战练习",
+      "instruction": "沿星链依次点击五颗星。",
+      "sequence": [
+        "chain1",
+        "chain2",
+        "chain3",
+        "chain4",
+        "chain5"
+      ],
+      "hideLabels": true,
+      "hideLines": true
+    },
+    {
+      "id": "d19_s04",
+      "type": "practice",
+      "mode": "star_hop",
+      "title": "完成实战练习",
+      "instruction": "从织女星跳到星链末端。",
+      "sequence": [
+        "vega",
+        "chain1",
+        "chain3",
+        "chain5"
+      ],
+      "hideLabels": true
+    }
+  ],
+  "completion": {
+    "unlockDay": 20,
+    "knownObjects": [
+      "star_chain"
+    ],
+    "ability": "星链识别 Lv1"
+  }
+}

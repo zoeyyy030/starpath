@@ -1,0 +1,71 @@
+{
+  "day": 10,
+  "title": "找到天津四",
+  "chapterId": "summer",
+  "chapter": "夏季大三角与星座骨架",
+  "difficulty": 1,
+  "duration": "15分钟",
+  "goal": "从织女星扩展到天津四",
+  "objects": [
+    "vega",
+    "deneb",
+    "cygnus"
+  ],
+  "steps": [
+    {
+      "id": "d10_s01",
+      "type": "intro",
+      "title": "寻找第二个顶点",
+      "content": "天津四位于织女星东北侧，是天鹅座尾部的亮星。"
+    },
+    {
+      "id": "d10_s02",
+      "type": "guide",
+      "title": "从织女星走向天津四",
+      "content": "跟随星图分段建立路径。",
+      "steps": [
+        "找到织女星",
+        "观察东北方向",
+        "移动一个大角距",
+        "抵达天津四"
+      ],
+      "path": [
+        "vega",
+        "deneb"
+      ]
+    },
+    {
+      "id": "d10_s03",
+      "type": "practice",
+      "mode": "sequence_click",
+      "title": "完成实战练习",
+      "instruction": "依次点击织女星和天津四。",
+      "sequence": [
+        "vega",
+        "deneb"
+      ],
+      "sequenceLabels": [
+        "织女星",
+        "天津四"
+      ],
+      "hideLabels": true
+    },
+    {
+      "id": "d10_s04",
+      "type": "binocular",
+      "title": "10×50 双筒模拟",
+      "target": "deneb",
+      "fieldOfView": 6,
+      "holdMs": 500,
+      "hint": "先肉眼确认天津四，再把它稳定在双筒中央。",
+      "required": false
+    }
+  ],
+  "completion": {
+    "unlockDay": 11,
+    "knownObjects": [
+      "deneb"
+    ],
+    "ability": "夏季星跳 Lv1"
+  }
+}

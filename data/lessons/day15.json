@@ -1,0 +1,44 @@
+{
+  "day": 15,
+  "title": "练习一次举镜命中",
+  "chapterId": "binocular",
+  "chapter": "双筒使用与星跳基础",
+  "difficulty": 2,
+  "duration": "15分钟",
+  "goal": "肉眼锁定亮星后直接举双筒定位",
+  "objects": [
+    "vega",
+    "lyra"
+  ],
+  "steps": [
+    {
+      "id": "d15_s01",
+      "type": "intro",
+      "title": "眼睛盯住目标再举镜",
+      "content": "不要低头看双筒。视线保持在织女星上，把双筒送到眼前。"
+    },
+    {
+      "id": "d15_s02",
+      "type": "practice",
+      "mode": "target_centering",
+      "title": "完成实战练习",
+      "instruction": "拖动模拟视场，将织女星进入中央 30% 并停留 500ms。",
+      "target": "vega",
+      "holdMs": 500
+    },
+    {
+      "id": "d15_s03",
+      "type": "binocular",
+      "title": "10×50 双筒模拟",
+      "target": "vega",
+      "fieldOfView": 6,
+      "holdMs": 500,
+      "hint": "再做一次完整举镜命中。"
+    }
+  ],
+  "completion": {
+    "unlockDay": 16,
+    "knownObjects": [],
+    "ability": "双筒指向 Lv1"
+  }
+}

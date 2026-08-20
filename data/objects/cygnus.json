@@ -1,0 +1,64 @@
+{
+  "id": "cygnus",
+  "type": "constellation",
+  "name": "天鹅座",
+  "recognitionShape": "北天十字",
+  "points": [
+    {
+      "id": "deneb",
+      "name": "天津四",
+      "x": 70,
+      "y": 23,
+      "size": 6
+    },
+    {
+      "id": "sadr",
+      "name": "辇道增七",
+      "en": "Sadr",
+      "x": 62,
+      "y": 43,
+      "size": 5
+    },
+    {
+      "id": "albireo",
+      "name": "辇道增五",
+      "en": "Albireo",
+      "x": 52,
+      "y": 70,
+      "size": 5,
+      "color": "#ffe2a8"
+    },
+    {
+      "id": "gienah",
+      "name": "天津九",
+      "x": 48,
+      "y": 43,
+      "size": 4
+    },
+    {
+      "id": "delta_cyg",
+      "name": "天津二",
+      "x": 76,
+      "y": 45,
+      "size": 4
+    }
+  ],
+  "lines": [
+    [
+      "deneb",
+      "sadr"
+    ],
+    [
+      "sadr",
+      "albireo"
+    ],
+    [
+      "gienah",
+      "sadr"
+    ],
+    [
+      "sadr",
+      "delta_cyg"
+    ]
+  ]
+}

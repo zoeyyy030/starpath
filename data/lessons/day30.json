@@ -1,0 +1,116 @@
+{
+  "day": 30,
+  "title": "毕业夜",
+  "chapterId": "autumn",
+  "chapter": "秋季星空与深空目标",
+  "difficulty": 4,
+  "duration": "30分钟",
+  "goal": "自己规划并完成一条五目标观测路线",
+  "objects": [
+    "polaris",
+    "vega",
+    "deneb",
+    "altair",
+    "pegasus",
+    "m31",
+    "double_cluster",
+    "moon"
+  ],
+  "steps": [
+    {
+      "id": "d30_s01",
+      "type": "intro",
+      "title": "今晚由你决定路线",
+      "content": "从候选目标中按想观测的顺序选择五个。课程不直接给答案。"
+    },
+    {
+      "id": "d30_s02",
+      "type": "practice",
+      "mode": "observation_check",
+      "title": "完成实战练习",
+      "instruction": "依次选择五个目标；点击顺序就是路线顺序。",
+      "selectionLimit": 5,
+      "options": [
+        {
+          "id": "polaris",
+          "label": "北极星"
+        },
+        {
+          "id": "vega",
+          "label": "织女星"
+        },
+        {
+          "id": "deneb",
+          "label": "天津四"
+        },
+        {
+          "id": "altair",
+          "label": "牛郎星"
+        },
+        {
+          "id": "pegasus",
+          "label": "飞马四边形"
+        },
+        {
+          "id": "m31",
+          "label": "M31"
+        },
+        {
+          "id": "double_cluster",
+          "label": "双星团"
+        },
+        {
+          "id": "moon",
+          "label": "月球"
+        }
+      ]
+    },
+    {
+      "id": "d30_s03",
+      "type": "practice",
+      "mode": "observation_check",
+      "title": "完成实战练习",
+      "instruction": "按自定路线完成观测后逐项确认。",
+      "checks": [
+        {
+          "id": "route",
+          "label": "按路线依次寻找目标"
+        },
+        {
+          "id": "binocular",
+          "label": "至少一次肉眼锁定后举镜命中"
+        },
+        {
+          "id": "starhop",
+          "label": "至少完成一次星跳"
+        },
+        {
+          "id": "return",
+          "label": "能够重新找回起点"
+        },
+        {
+          "id": "log",
+          "label": "准备记录毕业夜日志"
+        }
+      ],
+      "minChecks": 3
+    }
+  ],
+  "completion": {
+    "unlockDay": 31,
+    "knownObjects": [
+      "polaris",
+      "vega",
+      "deneb",
+      "altair",
+      "pegasus",
+      "m31",
+      "double_cluster",
+      "moon"
+    ],
+    "ability": "StarPath 30 天基础训练完成",
+    "resultKicker": "毕业夜完成",
+    "resultTitle": "StarPath 30 天基础训练完成",
+    "summary": "天空方向感、北天导航、夏季导航、双筒导航、星跳与深空目标能力均达到 Lv1。你已经可以独立制定一条简单观星路线。"
+  }
+}

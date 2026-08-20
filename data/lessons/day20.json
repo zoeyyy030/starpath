@@ -1,0 +1,69 @@
+{
+  "day": 20,
+  "title": "第一次完整星跳",
+  "chapterId": "binocular",
+  "chapter": "双筒使用与星跳基础",
+  "difficulty": 3,
+  "duration": "20分钟",
+  "goal": "从已知亮星经过多个中间点抵达目标区域",
+  "objects": [
+    "vega",
+    "lyra",
+    "star_chain"
+  ],
+  "steps": [
+    {
+      "id": "d20_s01",
+      "type": "intro",
+      "title": "完整星跳不是一次跳到终点",
+      "content": "每次只确认下一个明显路标，失去方向就回到上一个点。"
+    },
+    {
+      "id": "d20_s02",
+      "type": "guide",
+      "title": "起点到目标区",
+      "content": "跟随星图分段建立路径。",
+      "steps": [
+        "织女星起点",
+        "天琴座路标",
+        "星链中点",
+        "目标区域"
+      ],
+      "path": [
+        "vega",
+        "sheliak",
+        "chain3",
+        "chain5"
+      ]
+    },
+    {
+      "id": "d20_s03",
+      "type": "practice",
+      "mode": "star_hop",
+      "title": "完成实战练习",
+      "instruction": "不显示连线，完成整条路径。",
+      "sequence": [
+        "vega",
+        "sheliak",
+        "chain3",
+        "chain5"
+      ],
+      "hideLabels": true,
+      "hideLines": true,
+      "retryHint": "回到最后确认的路标。"
+    },
+    {
+      "id": "d20_s04",
+      "type": "practice",
+      "mode": "sky_map_recall",
+      "title": "完成实战练习",
+      "instruction": "闭眼回忆这条路径的转折方向。",
+      "answerVisual": "织女星 ↘ 天琴路标 → 星链中点 ↗ 目标区"
+    }
+  ],
+  "completion": {
+    "unlockDay": 21,
+    "knownObjects": [],
+    "ability": "星跳 Lv1"
+  }
+}

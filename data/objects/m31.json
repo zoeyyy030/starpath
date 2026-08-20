@@ -1,0 +1,20 @@
+{
+  "id": "m31",
+  "type": "deep_sky",
+  "name": "仙女座星系",
+  "catalog": "M31",
+  "visibleBy": "10x50",
+  "appearance": "faint_oval_glow",
+  "points": [
+    {
+      "id": "m31",
+      "name": "仙女座星系",
+      "en": "M31",
+      "x": 84,
+      "y": 18,
+      "size": 12,
+      "kind": "deep_sky",
+      "description": "双筒中呈微弱椭圆模糊光斑。"
+    }
+  ]
+}

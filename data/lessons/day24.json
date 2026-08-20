@@ -1,0 +1,72 @@
+{
+  "day": 24,
+  "title": "第一次找 M31",
+  "chapterId": "autumn",
+  "chapter": "秋季星空与深空目标",
+  "difficulty": 3,
+  "duration": "20分钟",
+  "goal": "通过星跳找到仙女座星系",
+  "objects": [
+    "pegasus",
+    "andromeda",
+    "m31"
+  ],
+  "steps": [
+    {
+      "id": "d24_s01",
+      "type": "intro",
+      "title": "你的第一个河外星系目标",
+      "content": "M31 在双筒中应是微弱、椭圆、模糊的光斑，不是高清银河照片。"
+    },
+    {
+      "id": "d24_s02",
+      "type": "guide",
+      "title": "从飞马跳向 M31",
+      "content": "跟随星图分段建立路径。",
+      "steps": [
+        "壁宿二",
+        "奎宿九",
+        "仙女座 μ 路标",
+        "M31 模糊光斑"
+      ],
+      "path": [
+        "alpheratz",
+        "mirach",
+        "mu_and",
+        "m31"
+      ]
+    },
+    {
+      "id": "d24_s03",
+      "type": "practice",
+      "mode": "star_hop",
+      "title": "完成实战练习",
+      "instruction": "关闭连线完成 M31 星跳。",
+      "sequence": [
+        "alpheratz",
+        "mirach",
+        "mu_and",
+        "m31"
+      ],
+      "hideLabels": true,
+      "hideLines": true
+    },
+    {
+      "id": "d24_s04",
+      "type": "binocular",
+      "title": "10×50 双筒模拟",
+      "target": "m31",
+      "fieldOfView": 6,
+      "holdMs": 500,
+      "hint": "把微弱椭圆光斑保持在视场中央。"
+    }
+  ],
+  "completion": {
+    "unlockDay": 25,
+    "knownObjects": [
+      "m31"
+    ],
+    "ability": "深空目标 Lv1",
+    "resultTitle": "你完成了第一次深空星跳"
+  }
+}

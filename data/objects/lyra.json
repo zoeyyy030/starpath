@@ -1,0 +1,63 @@
+{
+  "id": "lyra",
+  "type": "constellation",
+  "name": "天琴座",
+  "recognitionShape": "亮星旁小平行四边形",
+  "points": [
+    {
+      "id": "vega",
+      "name": "织女星",
+      "x": 28,
+      "y": 29,
+      "size": 7
+    },
+    {
+      "id": "sheliak",
+      "name": "渐台二",
+      "en": "Sheliak",
+      "x": 38,
+      "y": 42,
+      "size": 4
+    },
+    {
+      "id": "sulafat",
+      "name": "渐台三",
+      "en": "Sulafat",
+      "x": 44,
+      "y": 39,
+      "size": 4
+    },
+    {
+      "id": "delta_lyr",
+      "name": "天琴 δ",
+      "x": 41,
+      "y": 51,
+      "size": 3
+    },
+    {
+      "id": "zeta_lyr",
+      "name": "天琴 ζ",
+      "x": 34,
+      "y": 50,
+      "size": 3
+    }
+  ],
+  "lines": [
+    [
+      "sheliak",
+      "sulafat"
+    ],
+    [
+      "sulafat",
+      "delta_lyr"
+    ],
+    [
+      "delta_lyr",
+      "zeta_lyr"
+    ],
+    [
+      "zeta_lyr",
+      "sheliak"
+    ]
+  ]
+}

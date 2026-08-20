@@ -1,0 +1,61 @@
+{
+  "day": 23,
+  "title": "从飞马找到仙女座",
+  "chapterId": "autumn",
+  "chapter": "秋季星空与深空目标",
+  "difficulty": 2,
+  "duration": "18分钟",
+  "goal": "从飞马四边形延伸到仙女座主星链",
+  "objects": [
+    "pegasus",
+    "andromeda"
+  ],
+  "steps": [
+    {
+      "id": "d23_s01",
+      "type": "intro",
+      "title": "从四边形一角向外延伸",
+      "content": "壁宿二同时连接飞马四边形与仙女座主星链。"
+    },
+    {
+      "id": "d23_s02",
+      "type": "guide",
+      "title": "飞马到仙女座",
+      "content": "跟随星图分段建立路径。",
+      "steps": [
+        "找到飞马四边形",
+        "定位壁宿二",
+        "沿星链经过奎宿九",
+        "到达天大将军一"
+      ],
+      "path": [
+        "markab",
+        "alpheratz",
+        "mirach",
+        "almach"
+      ]
+    },
+    {
+      "id": "d23_s03",
+      "type": "practice",
+      "mode": "star_hop",
+      "title": "完成实战练习",
+      "instruction": "按顺序点击飞马到仙女座的路标。",
+      "sequence": [
+        "markab",
+        "alpheratz",
+        "mirach",
+        "almach"
+      ],
+      "hideLabels": true,
+      "hideLines": true
+    }
+  ],
+  "completion": {
+    "unlockDay": 24,
+    "knownObjects": [
+      "andromeda"
+    ],
+    "ability": "秋季星跳 Lv1"
+  }
+}

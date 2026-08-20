@@ -1,0 +1,54 @@
+{
+  "day": 8,
+  "title": "找到织女星",
+  "chapterId": "summer",
+  "chapter": "夏季大三角与星座骨架",
+  "difficulty": 1,
+  "duration": "15分钟",
+  "goal": "不看名称也能独立找到织女星",
+  "objects": [
+    "vega",
+    "lyra"
+  ],
+  "steps": [
+    {
+      "id": "d08_s01",
+      "type": "intro",
+      "title": "进入夏季星空",
+      "content": "织女星是夏季天空非常醒目的亮星，也是夏季大三角的一个顶点。"
+    },
+    {
+      "id": "d08_s02",
+      "type": "learn",
+      "target": "vega",
+      "title": "认识织女星",
+      "content": "记住它很亮、偏蓝白，并位于天琴座。"
+    },
+    {
+      "id": "d08_s03",
+      "type": "practice",
+      "mode": "blind_sky",
+      "title": "完成实战练习",
+      "instruction": "关闭名称找到织女星。",
+      "target": "vega",
+      "hideLabels": true,
+      "hideLines": true
+    },
+    {
+      "id": "d08_s04",
+      "type": "practice",
+      "mode": "target_centering",
+      "title": "完成实战练习",
+      "instruction": "肉眼锁定后将双筒视场举到织女星。",
+      "target": "vega",
+      "holdMs": 500
+    }
+  ],
+  "completion": {
+    "unlockDay": 9,
+    "knownObjects": [
+      "vega"
+    ],
+    "ability": "夏季亮星识别 Lv1"
+  }
+}

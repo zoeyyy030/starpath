@@ -1,0 +1,59 @@
+{
+  "day": 21,
+  "title": "第三阶段闭卷",
+  "chapterId": "binocular",
+  "chapter": "双筒使用与星跳基础",
+  "difficulty": 3,
+  "duration": "20分钟",
+  "goal": "独立完成肉眼定位、举镜、移动视场与星跳",
+  "objects": [
+    "vega",
+    "lyra",
+    "star_chain"
+  ],
+  "steps": [
+    {
+      "id": "d21_s01",
+      "type": "intro",
+      "title": "把动作连成一套流程",
+      "content": "肉眼定位 → 举镜 → 移动一个视场 → 星跳 → 找回起点。"
+    },
+    {
+      "id": "d21_s02",
+      "type": "practice",
+      "mode": "target_centering",
+      "title": "完成实战练习",
+      "instruction": "第一关：把织女星稳定在中央。",
+      "target": "vega"
+    },
+    {
+      "id": "d21_s03",
+      "type": "practice",
+      "mode": "star_hop",
+      "title": "完成实战练习",
+      "instruction": "第二关：沿路标到星链末端。",
+      "sequence": [
+        "vega",
+        "sheliak",
+        "chain3",
+        "chain5"
+      ],
+      "hideLabels": true
+    },
+    {
+      "id": "d21_s04",
+      "type": "practice",
+      "mode": "sky_map_recall",
+      "title": "完成实战练习",
+      "instruction": "第三关：回忆并找回起点。",
+      "answerVisual": "目标区 → 星链 → 天琴路标 → 织女星"
+    }
+  ],
+  "completion": {
+    "unlockDay": 22,
+    "knownObjects": [],
+    "ability": "双筒导航 Lv1",
+    "resultKicker": "第三阶段完成",
+    "resultTitle": "你已经会用双筒沿路径找目标"
+  }
+}

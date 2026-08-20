@@ -1,0 +1,68 @@
+{
+  "day": 27,
+  "title": "回到天鹅银河",
+  "chapterId": "autumn",
+  "chapter": "秋季星空与深空目标",
+  "difficulty": 2,
+  "duration": "18分钟",
+  "goal": "复习夏季银河星野并与 Day17 比较",
+  "objects": [
+    "deneb",
+    "cygnus",
+    "milky_way_field"
+  ],
+  "steps": [
+    {
+      "id": "d27_s01",
+      "type": "intro",
+      "title": "第二次看会看见更多结构",
+      "content": "比较自己是否更容易看到背景星、沿天鹅移动并找回天津四。"
+    },
+    {
+      "id": "d27_s02",
+      "type": "practice",
+      "mode": "comparison",
+      "title": "完成实战练习",
+      "instruction": "哪一个星野更接近天鹅银河区域？",
+      "visual": "A ·　·　·　　B ···· ·· ···",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：稀疏"
+        },
+        {
+          "id": "b",
+          "label": "B：密集"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "d27_s03",
+      "type": "practice",
+      "mode": "observation_check",
+      "title": "完成实战练习",
+      "instruction": "完成一次复习记录。",
+      "checks": [
+        {
+          "id": "background",
+          "label": "看到更多背景星"
+        },
+        {
+          "id": "cygnus_path",
+          "label": "能沿天鹅结构移动"
+        },
+        {
+          "id": "deneb",
+          "label": "仍能独立找到天津四"
+        }
+      ],
+      "minChecks": 2
+    }
+  ],
+  "completion": {
+    "unlockDay": 28,
+    "knownObjects": [],
+    "ability": "银河复习 Lv1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "moon",
+  "type": "solar_system",
+  "name": "月球",
+  "visibleBy": "10x50",
+  "points": [
+    {
+      "id": "moon",
+      "name": "月球",
+      "en": "Moon",
+      "x": 50,
+      "y": 45,
+      "size": 18,
+      "color": "#eee7ce",
+      "description": "观察月海、明暗区域和明暗分界线。"
+    }
+  ],
+  "training": {
+    "features": [
+      "lunar_maria",
+      "terminator"
+    ]
+  }
+}

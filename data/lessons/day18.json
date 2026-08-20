@@ -1,0 +1,67 @@
+{
+  "day": 18,
+  "title": "认识银河星野",
+  "chapterId": "binocular",
+  "chapter": "双筒使用与星跳基础",
+  "difficulty": 2,
+  "duration": "15分钟",
+  "goal": "理解银河区域恒星密度更高",
+  "objects": [
+    "sparse_field",
+    "milky_way_field"
+  ],
+  "steps": [
+    {
+      "id": "d18_s01",
+      "type": "intro",
+      "title": "不是虚假的彩色银河照片",
+      "content": "双筒里的差别主要是背景星数量，而非夸张云雾。"
+    },
+    {
+      "id": "d18_s02",
+      "type": "practice",
+      "mode": "comparison",
+      "title": "完成实战练习",
+      "instruction": "哪一个更接近银河密集星野？",
+      "visual": "A ·　·　　　·　　B ··· ·· ···· ··",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：稀疏星野"
+        },
+        {
+          "id": "b",
+          "label": "B：密集星野"
+        }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "d18_s03",
+      "type": "practice",
+      "mode": "observation_check",
+      "title": "完成实战练习",
+      "instruction": "记录你观察星野时注意到的差异。",
+      "checks": [
+        {
+          "id": "more_stars",
+          "label": "密集区域背景星更多"
+        },
+        {
+          "id": "no_color",
+          "label": "没有夸张彩色云雾"
+        },
+        {
+          "id": "structure",
+          "label": "能看出星链或小星群"
+        }
+      ],
+      "minChecks": 2
+    }
+  ],
+  "completion": {
+    "unlockDay": 19,
+    "knownObjects": [],
+    "ability": "银河星野识别 Lv1"
+  }
+}

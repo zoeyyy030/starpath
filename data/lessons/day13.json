@@ -1,0 +1,76 @@
+{
+  "day": 13,
+  "title": "认识天鹅座",
+  "chapterId": "summer",
+  "chapter": "夏季大三角与星座骨架",
+  "difficulty": 2,
+  "duration": "15分钟",
+  "goal": "通过北天十字结构识别天鹅座",
+  "objects": [
+    "deneb",
+    "cygnus"
+  ],
+  "steps": [
+    {
+      "id": "d13_s01",
+      "type": "intro",
+      "title": "天津四是天鹅的尾巴",
+      "content": "从天津四经辇道增七到辇道增七南侧的辇道亮星，形成天鹅座长轴。"
+    },
+    {
+      "id": "d13_s02",
+      "type": "learn",
+      "target": "cygnus",
+      "title": "记住北天十字",
+      "content": "一条长轴加一条短横轴，是天鹅座最有用的骨架。"
+    },
+    {
+      "id": "d13_s03",
+      "type": "practice",
+      "mode": "shape_recognition",
+      "title": "完成实战练习",
+      "instruction": "哪一个是天鹅座骨架？",
+      "visual": "A 十字　B W　C ◇",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：十字结构"
+        },
+        {
+          "id": "b",
+          "label": "B：W"
+        },
+        {
+          "id": "c",
+          "label": "C：四边形"
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "d13_s04",
+      "type": "practice",
+      "mode": "star_hop",
+      "title": "完成实战练习",
+      "instruction": "沿天鹅长轴点击天津四、辇道增七、辇道增五。",
+      "sequence": [
+        "deneb",
+        "sadr",
+        "albireo"
+      ],
+      "sequenceLabels": [
+        "天津四",
+        "辇道增七",
+        "辇道增五"
+      ],
+      "hideLabels": true
+    }
+  ],
+  "completion": {
+    "unlockDay": 14,
+    "knownObjects": [
+      "cygnus"
+    ],
+    "ability": "天鹅座骨架 Lv1"
+  }
+}

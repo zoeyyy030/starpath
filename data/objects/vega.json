@@ -1,0 +1,23 @@
+{
+  "id": "vega",
+  "type": "star",
+  "name": "织女星",
+  "enName": "Vega",
+  "x": 28,
+  "y": 29,
+  "size": 7,
+  "magnitude": 0.03,
+  "visibleBy": "naked_eye",
+  "points": [
+    {
+      "id": "vega",
+      "name": "织女星",
+      "en": "Vega",
+      "x": 28,
+      "y": 29,
+      "size": 7,
+      "color": "#eef4ff",
+      "description": "天琴座最亮星，夏季大三角最醒目的顶点。"
+    }
+  ]
+}

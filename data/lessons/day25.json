@@ -1,0 +1,81 @@
+{
+  "day": 25,
+  "title": "认识英仙座",
+  "chapterId": "autumn",
+  "chapter": "秋季星空与深空目标",
+  "difficulty": 3,
+  "duration": "18分钟",
+  "goal": "建立仙后座到英仙座的空间联系",
+  "objects": [
+    "cassiopeia",
+    "perseus"
+  ],
+  "steps": [
+    {
+      "id": "d25_s01",
+      "type": "intro",
+      "title": "从熟悉的 W 向外扩展",
+      "content": "英仙座位于仙后座附近，可用弯曲星链识别。"
+    },
+    {
+      "id": "d25_s02",
+      "type": "guide",
+      "title": "仙后座到英仙座",
+      "content": "跟随星图分段建立路径。",
+      "steps": [
+        "找到仙后座 W",
+        "从王良四向外",
+        "抵达天船三",
+        "确认英仙座弯曲星链"
+      ],
+      "path": [
+        "schedar",
+        "navi",
+        "mirfak"
+      ]
+    },
+    {
+      "id": "d25_s03",
+      "type": "practice",
+      "mode": "star_hop",
+      "title": "完成实战练习",
+      "instruction": "沿路标进入英仙座。",
+      "sequence": [
+        "schedar",
+        "navi",
+        "mirfak"
+      ],
+      "hideLabels": true
+    },
+    {
+      "id": "d25_s04",
+      "type": "practice",
+      "mode": "shape_recognition",
+      "title": "完成实战练习",
+      "instruction": "哪一个更像英仙座星链？",
+      "visual": "A 弯曲长星链　B W　C 大方框",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A：弯曲星链"
+        },
+        {
+          "id": "b",
+          "label": "B：W"
+        },
+        {
+          "id": "c",
+          "label": "C：方框"
+        }
+      ],
+      "answer": "a"
+    }
+  ],
+  "completion": {
+    "unlockDay": 26,
+    "knownObjects": [
+      "perseus"
+    ],
+    "ability": "英仙座识别 Lv1"
+  }
+}

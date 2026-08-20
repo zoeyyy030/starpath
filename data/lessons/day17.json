@@ -1,0 +1,66 @@
+{
+  "day": 17,
+  "title": "沿天鹅座扫星",
+  "chapterId": "binocular",
+  "chapter": "双筒使用与星跳基础",
+  "difficulty": 2,
+  "duration": "18分钟",
+  "goal": "沿明显星座结构移动双筒",
+  "objects": [
+    "deneb",
+    "cygnus"
+  ],
+  "steps": [
+    {
+      "id": "d17_s01",
+      "type": "intro",
+      "title": "沿骨架移动，不在黑暗中乱扫",
+      "content": "从天津四出发，沿天鹅座长轴逐视场向南。"
+    },
+    {
+      "id": "d17_s02",
+      "type": "guide",
+      "title": "天鹅长轴路线",
+      "content": "跟随星图分段建立路径。",
+      "steps": [
+        "天津四 Deneb",
+        "辇道增七 Sadr",
+        "辇道增五 Albireo"
+      ],
+      "path": [
+        "deneb",
+        "sadr",
+        "albireo"
+      ]
+    },
+    {
+      "id": "d17_s03",
+      "type": "practice",
+      "mode": "star_hop",
+      "title": "完成实战练习",
+      "instruction": "按顺序完成三个路标。",
+      "sequence": [
+        "deneb",
+        "sadr",
+        "albireo"
+      ],
+      "hideLabels": true,
+      "hideLines": true
+    },
+    {
+      "id": "d17_s04",
+      "type": "binocular",
+      "title": "10×50 双筒模拟",
+      "target": "albireo",
+      "fieldOfView": 6,
+      "holdMs": 500,
+      "hint": "把路径终点稳定在双筒中央。",
+      "required": false
+    }
+  ],
+  "completion": {
+    "unlockDay": 18,
+    "knownObjects": [],
+    "ability": "结构扫描 Lv1"
+  }
+}
